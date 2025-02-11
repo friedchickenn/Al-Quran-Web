@@ -60,10 +60,10 @@ Aplikasi web ini memungkinkan pengguna untuk membaca Al-Quran secara lengkap, te
 
 1. Clone repositori ini:
    ```bash
-   git clone https://github.com/username/repo-name.git
+   git clone https://github.com/friedchickenn/Al-Quran-Web.git
 2. Buka folder proyek:
    ```bash
-   cd repo-name
+   cd Al-Quran-Web
 3. Buka file index.html di browser Anda.
 
 ## Terima Kasih
