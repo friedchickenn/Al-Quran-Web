@@ -10,8 +10,7 @@ Aplikasi web ini memungkinkan pengguna untuk membaca Al-Quran secara lengkap, te
    - Desain responsif yang mendukung berbagai perangkat (desktop, tablet, mobile).
    - Mode terang (light mode) dan mode gelap (dark mode).
    - Animasi hover dan scroll smooth.
-4. **Pencarian**: (Opsional) Fitur pencarian surah atau ayat.
-5. **Gradient dan Efek Visual**: Menggunakan gradient dan efek visual modern untuk meningkatkan pengalaman pengguna.
+4. **Gradient dan Efek Visual**: Menggunakan gradient dan efek visual modern untuk meningkatkan pengalaman pengguna.
 
 ## Teknologi yang Digunakan
 
@@ -35,7 +34,7 @@ Aplikasi web ini memungkinkan pengguna untuk membaca Al-Quran secara lengkap, te
    - Setelah memilih surah, Anda akan diarahkan ke halaman baru yang menampilkan ayat-ayat dari surah tersebut beserta terjemahannya.
 
 4. **Toggle Dark Mode**:
-   - Klik tombol 🌙 di pojok kanan atas untuk mengaktifkan atau menonaktifkan mode gelap.
+   - Klik tombol "Dark Mode🌙" di pojok kanan atas untuk mengaktifkan atau menonaktifkan mode gelap.
 
 5. **Kembali ke Daftar Surah**:
    - Gunakan tombol "Kembali ke Daftar Surah" untuk kembali ke halaman utama.
@@ -50,9 +49,10 @@ Aplikasi web ini memungkinkan pengguna untuk membaca Al-Quran secara lengkap, te
 ![image](https://github.com/user-attachments/assets/9868215e-b453-4b6c-99a1-342e5270164a)
 
 
-### Dark Mode
+### Dark Mode Halaman Daftar Surah
 ![image](https://github.com/user-attachments/assets/36f35f22-2c10-41b0-9e8a-88457275113b)
 
+### Dark Mode Halaman Baca Surah
 ![image](https://github.com/user-attachments/assets/01b38eae-c96f-4491-b454-fd708d9d76ce)
 
 
