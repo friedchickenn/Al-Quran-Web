@@ -1,0 +1,184 @@
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #66cd88;
+    --secondary-color: #43bfd4;
+    --background-light: #f8f9fa;
+    --background-dark: #1e1e2f;
+    --text-light: #333;
+    --text-dark: #f8f9fa;
+    --card-bg-light: #fff;
+    --card-bg-dark: #2d2d44;
+    --shadow-light: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --shadow-dark: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-light);
+    color: var(--text-light);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--card-bg-light);
+    box-shadow: var(--shadow-light);
+    border-radius: 15px;
+    margin-top: 30px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.dark-mode .container {
+    background-color: var(--card-bg-dark);
+    box-shadow: var(--shadow-dark);
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.dark-mode-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* Surah List Styles */
+#surah-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.surah {
+    padding: 15px;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.surah:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Ayat List Styles */
+#ayat-list {
+    margin-top: 30px;
+}
+
+.ayat {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: var(--card-bg-light);
+    border-radius: 8px;
+    box-shadow: var(--shadow-light);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+body.dark-mode .ayat {
+    background-color: var(--card-bg-dark);
+    box-shadow: var(--shadow-dark);
+}
+
+.ayat:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.ayat-arabic {
+    font-size: 1.8rem;
+    text-align: right;
+    margin-bottom: 15px;
+    font-family: 'Amiri', serif;
+    line-height: 1.8;
+}
+
+.ayat-translation {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+body.dark-mode .ayat-translation {
+    color: var(--text-dark);
+}
+
+/* Back Button Styles */
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+    transition: transform 0.2s ease;
+}
+
+.back-button:hover {
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .surah {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .ayat-arabic {
+        font-size: 1.5rem;
+    }
+
+    .ayat-translation {
+        font-size: 1rem;
+    }
+}
